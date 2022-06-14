@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DE LA FUENTE -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ICONO DE LA PAGINA -->
+    <link rel="shortcut icon" href="../img/favicon.jpg">
+    <title>CONTACTO | ESCUELA OHANA</title>
+</head>
+
+<body>
+    <div class="grilla">
+        <header class="header">
+            <!-- LOGO Y TITULO DE LA ESCUELA -->
+            <a href="../index.html"><img class="logo" src="../img/logo.jpg" alt="logo"></a>
+            <h1>
+                <span> Escuela de formación</span>
+                <br>
+                <span class="titulo">OHANA</span>
+            </h1>
+        </header>
+        <!-- EL MENU  -->
+        <nav class="nav">
+            <ul>
+                <li class="itemmenu"><a href="../index.html">INICIO</a></li>
+                <li class="itemmenu"><a href="./quienessomos.html">QUIÉNES SOMOS</a></li>
+                <li class="itemmenu"><a href="./escuela.html">ESCUELA</a>
+                    <ol>
+                        <li>Talleres</li>
+                        <li>Dias y Horarios</li>
+                        <li>Muestra Anual</li>
+                    </ol>
+                </li>
+                <li class="itemmenu">
+                    <a href="./galeria.html">GALERÍA</a>
+                </li>
+                <li class="itemmenu">
+                    <a href="./contacto.html">CONTACTO</a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <main class="maincontacto">
+            <!-- CONTENIDO PRINCIPAL/FORMULARIO DE CONTACTO -->
+            <form class="formulariocontacto" action="#" method="get">
+                <label>
+                    <input type="text" placeholder="Nombre" name="nombre">
+                    <input type="text" placeholder="Apellido" name="apellido">
+                </label>
+                <br>
+                <label>
+                    <input type="number" min="1" name="edad" placeholder="Edad">
+                    <br><br>
+                    <input type="email" name="email" placeholder="Email">
+                </label>
+                <!-- <br><br> -->
+                <label>
+                    <span>Hombre</span>
+                    <input type="radio" name="sexo" value="hombre">
+
+                    <span>Mujer</span>
+                    <input type="radio" name="sexo" value="mujer">
+
+                    <span>Otro</span>
+                    <input type="radio" name="sexo" value="otro">
+                </label>
+                <!-- <br> -->
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Acá escriba su mensaje"></textarea>
+                <!-- <br> -->
+                <select name="interes">
+                    <option value="seleccion">Seleccione el interés</option>
+                    <option value="cursos">Cursos</option>
+                    <option value="news">Novedades</option>
+                    <option value="promos">Promociones</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <label>
+                    <input type="checkbox" name="suscripcion">
+                    <span>Subscribirse al newsletter</span>
+                </label>
+                <!-- <br><br> -->
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+        <footer class="footer">
+            <!-- AUDIO Y REDES DE CONTACTO -->
+            <audio class="audio" controls autoplay
+                src="./mp3/y2mate.com - Ennio Morricone Cinema Paradiso Theme piano.mp3">
+                El navegador no soporta el audio
+            </audio>
+            <ul class="redes">
+                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-instagram redes"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fab fa-whatsapp redes"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter redes"></i></a></li>
+
+
+
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+/* RESETEO */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.grilla {
+    display: grid;
+    grid-template-rows: 15vh 10vh 60vh 15vh;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+/* HEADER FOOTER MAIN */
+.header {
+    /* height: 10vh; */
+    grid-area: header;
+    background-color: rgba(225, 188, 141, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main {
+    grid-area: main;
+    /* height: 60vh; */
+    /* background-color: white; */
+    display: flex;
+    background-image: url(../img/fondo.JPG);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.footer {
+    grid-area: footer;
+    /* height: 15vh; */
+    display: flex;
+    background-color: rgba(225, 188, 141, 0.5);
+    flex-direction: row;
+    align-items: center;
+}
+
+/* LOGO- HEADER */
+.logo {
+    border-radius: 50%;
+    max-height: 85px;
+
+}
+
+.logo:hover {
+    transition: 0.5;
+    transform: scale(1.5);
+}
+
+/* TITULO- HEADER */
+h1 {
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px white;
+    margin-left: 10px;
+
+}
+
+.titulo {
+    color: brown;
+    margin-left: 15px;
+}
+
+/*MENU - HEADER*/
+.nav {
+    grid-area: nav;
+    background-color: rgba(191, 212, 210, 0.5);
+
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemmenu {
+    margin-top: 1.5%;
+    list-style: none;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav ul ol {
+    position: absolute;
+    display: none;
+}
+
+.nav ul ol li {
+    display: block;
+    color: black;
+    margin-top: 7%;
+}
+
+.nav .itemmenu:hover a {
+
+    color: black;
+    text-shadow: 2px 3px white;
+
+}
+
+.nav ul .itemmenu:hover ol {
+    display: block;
+    background-color: rgba(191, 212, 210, 0.8);
+}
+
+.itemmenu a {
+    text-decoration: none;
+    color: rgb(147, 58, 58);
+}
+
+/* MAIN INDEX*/
+.contenedorimagen {
+    width: 35%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.imagenindex {
+    height: 100%;
+    width: 100%;
+}
+
+.contenedortexto {
+    width: 65%;
+    height: 100%;
+    margin: 10%;
+
+}
+
+.texto {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-style: italic;
+    /* margin: 10% 10% 10% 20%; */
+    font-size: 20px;
+    max-height: 200px;
+    max-width: 500px;
+    overflow: auto;
+    color: white;
+    background-color: rgba(31, 30, 28, 0.2);
+}
+
+/* FOOTER */
+.audio {
+    width: 15vw;
+    justify-content: left;
+}
+
+/* REDES DEL FOOTER */
+.redes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+
+}
+
+.redes li a {
+    text-decoration: none;
+}
+
+.redes li a i:hover {
+    transition: 0.6;
+    transform: scale(2);
+}
+
+/* QUIENES SOMOS */
+.mainquienessomos {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: none;
+    background-image: url('../img/fondoilustracion.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedormain {
+    padding-left: 1%;
+    margin-left: 1%;
+    background-color: rgba(225, 188, 141, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;    
+    max-height: 200px;
+}
+
+.titulomain {
+    margin-top: 1rem;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px brown;
+}
+
+.textomain {
+    font-family: 'Montserrat', sans-serif;
+
+    overflow: auto;
+    /* font-weight: bolder; */
+}
+
+.contenedorlogo {
+    width: 30%;
+    padding-left: 10%;
+}
+
+.contenedorlogo img {
+
+    border-radius: 50%;
+    max-width: 200px;
+    /* width:70%; */
+    /* height:70%; */
+}
+
+/* ESCUELA */
+.mainescuela {
+    background-color: rgba(225, 188, 141, 0.6);
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenedormainescuela {
+    
+    height: 50%;
+    overflow: hidden;
+
+}
+
+.contenedorvideoescuela {
+    height: 50%;
+}
+
+/* GALERIA */
+.maingaleria {
+    grid-area: main;
+    background-image: none;
+    background-image: url('../img/fondolineas.JPG');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.grillagaleria {
+    padding-top: 5%;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
+    gap: 5px;
+}
+
+.grillagaleria img {
+    border: solid 1px brown;
+
+}
+
+/* CONTACTO */
+.maincontacto {
+
+    grid-area: main;
+    overflow: auto;
+    background-image: url('../img/fondo.JPG');
+
+}
+
+.formulariocontacto {
+    margin-left: 1.5%;
+    background-color: rgba(225, 188, 141, 0.4);
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch;
+}
+
+
+.formulariocontacto input[type=text],
+.formulariocontacto input[type=number],
+.formulariocontacto input[type=submit] {
+    border-radius: 5px;
+    background-color: beige;
+    /* width: 100px; */
+    width: 15vw;
+    text-align: center;
+}
+
+.formulariocontacto input[type=email] {
+    width: 20vw;
+    border-radius: 5px;
+    background-color: beige;
+    text-align: center;
+}
+
+.formulariocontacto input[type=submit]:hover {
+    background-color: rgb(233, 233, 207);
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+.formulariocontacto select {
+    max-width: 600px;
+}
+
+.formulariocontacto textarea {
+    max-width: 600px;
+    /* height: 40vh; */
+}
+
+/* MEDIAS QUERIES DISPOSITIVO MOBILE */
+@media(max-width:375px) {
+
+    /* GRILLA GENERAL VERSION MOBILE */
+    .grilla {
+        grid-template-rows: 15vh 4vh 71vh 10vh;
+    }
+
+    /* LOGO HEADER VERSION MOBILE */
+    .logo {
+        height: 70px;
+    }
+
+    /* INDEX VERSION MOBILE */
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenedortexto {
+        max-width: 80%;
+    }
+
+    .texto {
+        font-size: 12px;
+    }
+
+    .contenedorimagen {
+        width: 40%;
+        height: 50%;
+        margin-left: 0;
+    }
+
+    .imagenindex {
+        margin-top: 15%;
+    }
+
+    /* FOOTER/ AUDIO DEL FOOTER DESAPARECE EN VERSION MOBILE */
+    .audio {
+        display: none;
+    }
+
+    .redes {
+        margin-left: 14vw;
+    }
+
+    /* MENU */
+    .itemmenu {
+        /* margin-top: 2%; */
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    /* QUIENES SOMOS VERSION MOBILE */
+    .mainquienessomos {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contenedormain {
+        padding-left: 0%;
+        margin-left: 0%;
+        margin-right: 10%;
+        width: 100%;
+        background-color: rgba(225, 188, 141, 0.7);
+        /* max-height: 100px; */
+    }
+
+    .titulomain {
+        margin-top: .5rem;
+        font-size: 12px;
+    }
+
+    .textomain {
+        font-size: 9px;
+        /* max-height: 100px; */
+    }
+
+    .contenedorlogo {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .contenedorlogo img {
+        /* padding-left:2%; */
+        max-width: 140px;
+
+    }
+
+    /* ESCUELA VERSION MOBILE */
+    .contenedorvideoescuela {
+        height: 40%;
+    }
+
+    .contenedormainescuela {
+        height: 60%;
+    }
+
+    /* GALERIA VERSION MOBILE */
+    .grillagaleria {
+        padding-top: 10%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(4, auto);
+
+    }
+
+    .maingaleria {
+        /* background-image: none; */
+        /* background-image: url('../img/fondolineas.JPG'); */
+        /* background-repeat: no-repeat; */
+        background-position: 0% 3%
+            /* background-attachment: fixed; */
+    }
+
+}
