@@ -50,13 +50,15 @@
 .logo {
     border-radius: 50%;
     max-height: 85px;
+    animation:logogiro 5s infinite;
+
 
 }
 
-.logo:hover {
+/* .logo:hover {
     transition: 0.5;
     transform: scale(1.5);
-}
+} */
 
 /* TITULO- HEADER */
 h1 {
@@ -75,7 +77,8 @@ h1 {
 /*MENU - HEADER*/
 .nav {
     grid-area: nav;
-    background-color: rgba(191, 212, 210, 0.5);
+    background-color: #bfd4d280;
+    background-image:linear-gradient(195deg, rgba(170,142,110,1) 0%, rgba(226,236,235,1) 0%, rgba(232,223,213,1) 0%, rgba(199,210,209,1) 44%, rgba(191,212,210,1) 64%, rgba(194,202,201,1) 87%);
 
 }
 
@@ -132,6 +135,9 @@ h1 {
 .imagenindex {
     height: 100%;
     width: 100%;
+    animation-name: imagenindex;
+    animation-duration: 5s;
+    animation-iteration-count: 5s;
 }
 
 .contenedortexto {
@@ -234,7 +240,10 @@ h1 {
 
 /* ESCUELA */
 .mainescuela {
-    background-color: rgba(225, 188, 141, 0.6);
+    background-color: #e1bc8d99;
+    /* background-image: linear-gradient(to top, #aa8e6e, #dbb482, #e1bc8d, #e1bc8d); */
+    /* background-image: linear-gradient(360deg, rgba(170,142,110,1) 0%, rgba(219,180,130,1) 31%, rgba(225,188,141,1) 42%, rgba(225,188,141,0.93) 46%); */
+    background-image: linear-gradient(360deg, rgba(170,142,110,1) 0%, rgba(175,147,113,1) 0%, rgba(232,223,213,1) 0%, rgba(232,206,172,1) 31%, rgba(226,196,157,1) 42%, rgba(225,188,141,0.9925012241224614) 46%);
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -329,6 +338,36 @@ h1 {
 .formulariocontacto textarea {
     max-width: 600px;
     /* height: 40vh; */
+}
+
+/* ANIMACIONES */
+@keyframes logogiro{
+    0%{
+        transform:rotate(0deg);
+        transition:.5s;
+    }
+    100%{
+        transform:rotate(50deg);
+        transition:.5s;
+    }
+}
+@keyframes imagenindex{
+    0%{
+        opacity:40%;
+        width:70%
+    }
+    25%{
+        opacity:50%;
+        width: 80%;
+    }
+    50%{
+        opacity: 70%;
+        width: 90%;
+    }
+    100%{
+        opacity: 100%;
+        width: 100%;
+    }
 }
 
 /* MEDIAS QUERIES DISPOSITIVO MOBILE */
