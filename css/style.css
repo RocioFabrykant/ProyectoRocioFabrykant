@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
 
+
 /* RESETEO */
 * {
     margin: 0;
@@ -9,7 +10,7 @@
 
 .grilla {
     display: grid;
-    grid-template-rows: 15vh 10vh 60vh 15vh;
+    grid-template-rows: 15vh 6vh 70vh 9vh;
     grid-template-areas:
         "header header header header"
         "nav nav nav nav"
@@ -19,9 +20,8 @@
 
 /* HEADER FOOTER MAIN */
 .header {
-    /* height: 10vh; */
     grid-area: header;
-    background-color: rgba(225, 188, 141, 0.8);
+    background-color: rgb(202 209 222);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,19 +29,14 @@
 
 .main {
     grid-area: main;
-    /* height: 60vh; */
-    /* background-color: white; */
     display: flex;
-    background-image: url(../img/fondo.JPG);
-    background-repeat: repeat;
-    background-size: cover;
+    background-image: url(../img/fondo1.JPG);
 }
 
 .footer {
     grid-area: footer;
-    /* height: 15vh; */
     display: flex;
-    background-color: rgba(225, 188, 141, 0.5);
+    background-color: rgb(202 209 222);;
     flex-direction: row;
     align-items: center;
 }
@@ -54,11 +49,6 @@
 
 
 }
-
-/* .logo:hover {
-    transition: 0.5;
-    transform: scale(1.5);
-} */
 
 /* TITULO- HEADER */
 h1 {
@@ -75,7 +65,47 @@ h1 {
 }
 
 /*MENU - HEADER*/
-.nav {
+/* CAMBIOS DEL MENU DE BOOTSTRAP */
+.navbar {
+    /* background-color: white; */
+    --bs-navbar-brand-font-size: 1rem;
+    grid-area: nav;
+    --bs-navbar-nav-link-padding-x: 4rem;
+    --bs-navbar-brand-margin-end: 4rem;
+    --bs-navbar-color: rgb(202 209 222);
+    /* CAMBIO COLOR DEL ICONO DEL MENU AL HACER HOVER */
+    --bs-navbar-hover-color: rgb(0 0 0 / 70%);
+    /* CAMBIO COLOR HOVER INICIO */
+    --bs-navbar-brand-hover-color: rgb(0 0 0 / 70%);
+    /* BORDE REDONDO ICONO MENU */
+    --bs-navbar-toggler-border-radius: 0.9rem;
+    --bs-navbar-toggler-focus-width: 0.1rem;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 6rem;
+    background-color: white;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+    z-index: 1;
+}
+.nav-link{
+    color:black;
+}
+
+.nav-link:active, .nav-link:visited, .nav-link:hover{
+    transition: 0.6s;
+    background-color:rgba(202,209,222,0.3);
+}
+.navbar-brand:active, .navbar-brand:visited{
+    transition: 1s;
+    transform:scale(1.6);
+} 
+.dropdown-toggle::after{
+    border-top: .3em solid  rgb(202 209 222);
+}
+
+/*MENU PREVIO A BOOTSTRAP
+ .nav { 
     grid-area: nav;
     background-color: #bfd4d280;
     background-image:linear-gradient(195deg, rgba(170,142,110,1) 0%, rgba(226,236,235,1) 0%, rgba(232,223,213,1) 0%, rgba(199,210,209,1) 44%, rgba(191,212,210,1) 64%, rgba(194,202,201,1) 87%);
@@ -123,7 +153,7 @@ h1 {
 .itemmenu a {
     text-decoration: none;
     color: rgb(147, 58, 58);
-}
+}*/
 
 /* MAIN INDEX*/
 .contenedorimagen {
@@ -135,29 +165,28 @@ h1 {
 .imagenindex {
     height: 100%;
     width: 100%;
-    animation-name: imagenindex;
-    animation-duration: 5s;
-    animation-iteration-count: 5s;
 }
 
 .contenedortexto {
     width: 65%;
     height: 100%;
-    margin: 10%;
-
+    padding: 10rem 0 0 5rem;
 }
 
 .texto {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-style: italic;
-    /* margin: 10% 10% 10% 20%; */
     font-size: 20px;
     max-height: 200px;
     max-width: 500px;
     overflow: auto;
     color: white;
     background-color: rgba(31, 30, 28, 0.2);
+    animation-name: textoindex;
+    animation-duration: 5s; 
+    animation-iteration-count: 5s;
+
 }
 
 /* FOOTER */
@@ -200,7 +229,7 @@ h1 {
 .contenedormain {
     padding-left: 1%;
     margin-left: 1%;
-    background-color: rgba(225, 188, 141, 0.5);
+    background-color:rgba(202,209, 222, 0.4) ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,38 +241,28 @@ h1 {
 .titulomain {
     margin-top: 1rem;
     font-size: 25px;
-    text-transform: uppercase;
-    font-style: italic;
     font-weight: bold;
-    box-shadow: 2px 2px 2px brown;
+    box-shadow: 2px 2px 2px #cad1de;
 }
 
 .textomain {
     font-family: 'Montserrat', sans-serif;
-
     overflow: auto;
-    /* font-weight: bolder; */
 }
 
 .contenedorlogo {
-    width: 30%;
-    padding-left: 10%;
+    padding-left: 6rem;
 }
 
 .contenedorlogo img {
-
-    border-radius: 50%;
-    max-width: 200px;
-    /* width:70%; */
-    /* height:70%; */
+    max-width: 225px;
 }
 
 /* ESCUELA */
 .mainescuela {
     background-color: #e1bc8d99;
-    /* background-image: linear-gradient(to top, #aa8e6e, #dbb482, #e1bc8d, #e1bc8d); */
-    /* background-image: linear-gradient(360deg, rgba(170,142,110,1) 0%, rgba(219,180,130,1) 31%, rgba(225,188,141,1) 42%, rgba(225,188,141,0.93) 46%); */
-    background-image: linear-gradient(360deg, rgba(170,142,110,1) 0%, rgba(175,147,113,1) 0%, rgba(232,223,213,1) 0%, rgba(232,206,172,1) 31%, rgba(226,196,157,1) 42%, rgba(225,188,141,0.9925012241224614) 46%);
+    background-image:url('../img/fondoescuela.jpg');
+    background-attachment: fixed;
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -252,10 +271,9 @@ h1 {
 }
 
 .contenedormainescuela {
-    
+    overflow: auto;
     height: 50%;
-    overflow: hidden;
-
+    background-color: #d1a38d42;
 }
 
 .contenedorvideoescuela {
@@ -266,15 +284,12 @@ h1 {
 .maingaleria {
     grid-area: main;
     background-image: none;
-    background-image: url('../img/fondolineas.JPG');
-    background-repeat: repeat;
     display: flex;
     flex-direction: column;
-    background-attachment: fixed;
     justify-content: flex-start;
     align-items: stretch;
 }
-
+/* GRILLA GALERIA PREVIO A BOOTSTRAP 
 .grillagaleria {
     padding-top: 5%;
     display: grid;
@@ -286,7 +301,34 @@ h1 {
 .grillagaleria img {
     border: solid 1px brown;
 
+}*/
+.contenedorgaleria{
+    max-width: 100%;
+    height:100%;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-image: url(../img/fondolineas.jpg);
+    background-attachment: fixed;
 }
+/* CAMBIOS GALERIA CAROUSEL BOOTSTRAP */
+.carousel-inner{
+    background-color:#cad1de78 ;
+}
+.carousel-item{
+    transition: transform .8s ease-in-out;
+}
+.carousel-item img{
+    max-height: 60vh;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: grey;
+    border-radius: 50%;
+}
+.carousel-control-next, .carousel-control-prev {
+width: 20%;
+
+}
+
 
 /* CONTACTO */
 .maincontacto {
@@ -351,24 +393,26 @@ h1 {
         transition:.5s;
     }
 }
-@keyframes imagenindex{
+ 
+@keyframes textoindex{
     0%{
-        opacity:40%;
-        width:70%
+        transition: .5s;
+        transform: scale(1.1);
     }
     25%{
-        opacity:50%;
-        width: 80%;
+        transition: .5s;
+        transform:scale(1.2);
     }
     50%{
-        opacity: 70%;
-        width: 90%;
+        transition: .5s;
+        transform: scale(1.3);
     }
     100%{
-        opacity: 100%;
-        width: 100%;
+        transition: .5s;
+        transform: scale(1);
+        
     }
-}
+} 
 
 /* MEDIAS QUERIES DISPOSITIVO MOBILE */
 @media(max-width:375px) {
@@ -420,7 +464,6 @@ h1 {
 
     /* MENU */
     .itemmenu {
-        /* margin-top: 2%; */
         font-size: 12px;
     }
 
@@ -440,7 +483,6 @@ h1 {
         margin-right: 10%;
         width: 100%;
         background-color: rgba(225, 188, 141, 0.7);
-        /* max-height: 100px; */
     }
 
     .titulomain {
@@ -450,7 +492,6 @@ h1 {
 
     .textomain {
         font-size: 9px;
-        /* max-height: 100px; */
     }
 
     .contenedorlogo {
@@ -459,7 +500,6 @@ h1 {
     }
 
     .contenedorlogo img {
-        /* padding-left:2%; */
         max-width: 140px;
 
     }
@@ -482,11 +522,7 @@ h1 {
     }
 
     .maingaleria {
-        /* background-image: none; */
-        /* background-image: url('../img/fondolineas.JPG'); */
-        /* background-repeat: no-repeat; */
-        background-position: 0% 3%
-            /* background-attachment: fixed; */
+        background-position: 0% 3%;
     }
 
 }
