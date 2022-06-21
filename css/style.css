@@ -30,7 +30,7 @@
 .main {
     grid-area: main;
     display: flex;
-    background-image: url(../img/fondo1.JPG);
+    background-image: url(../img/fondo1.jpg);
 }
 
 .footer {
@@ -307,7 +307,7 @@ h1 {
     height:100%;
     padding-left: 30%;
     padding-right: 30%;
-    background-image: url(../img/fondolineas.jpg);
+    background-image: url(../img/fondolineas.JPG);
     background-attachment: fixed;
 }
 /* CAMBIOS GALERIA CAROUSEL BOOTSTRAP */
