@@ -1,0 +1,4 @@
+1) Se ha agregado la etiqueta meta keywords en cada HTML, reconociendo las palabras claves pertinentes de acuerdo a la sección de que se trate.
+2) Se ha corroborado que en cada HTML el título (etiqueta title) sea el correspondiente para que el usuario pueda reconocer en qué sección se encuentra.
+3) Se ha corroborado que en todos los HTML exista solo un H1 y que el orden de los encabezados sea el adecuado.
+4) Se ha agregado la etiqueta meta description para cada HTML. 

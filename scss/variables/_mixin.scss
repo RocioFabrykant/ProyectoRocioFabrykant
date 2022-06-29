@@ -1,0 +1,11 @@
+@mixin animaciones($tiempo,$movimiento){
+    transition:$tiempo;
+    transform:$movimiento;
+}
+@mixin displayFlex($sentido,$positems,$aligncontent,$justify){
+    display:flex;
+    flex-direction: $sentido;
+    align-items: $positems;
+    align-content: $aligncontent;
+    justify-content: $justify;
+}

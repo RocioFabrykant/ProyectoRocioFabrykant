@@ -3,10 +3,7 @@
     background-image:$fondoEscuela;
     background-attachment: fixed;
     grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    @include displayFlex(column,center,center,flex-start);
 }
 
 .contenedormainescuela {
