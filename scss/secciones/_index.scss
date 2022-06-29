@@ -1,0 +1,33 @@
+.main {
+    grid-area: main;
+    display: flex;
+    background-image:$fondoIndex;
+}
+.contenedorimagen {
+    width: 35%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.imagenindex {
+    height: 100%;
+    width: 100%;
+}
+
+.contenedortexto {
+    width: 65%;
+    height: 100%;
+    padding: 10rem 0 0 5rem;
+}
+
+.texto {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    max-height: 200px;
+    max-width: 500px;
+    overflow: auto;
+    color: white;
+    background-color: rgba(31, 30, 28, 0.2);
+}

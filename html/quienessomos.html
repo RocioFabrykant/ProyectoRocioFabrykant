@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DE LA FUENTE -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ICONO DE LA PAGINA -->
+    <link rel="shortcut icon" href="../img/favicon.jpg">
+    <title>INICIO | ESCUELA OHANA</title>
+</head>
+
+<body>
+    <div class="grilla">
+        <header class="header">
+            <!-- LOGO Y TITULO DE LA ESCUELA -->
+            <a href="../index.html"><img class="logo" src="../img/logo.jpg" alt="logo"></a>
+            <h1>
+                <span> Escuela de formación</span>
+                <br>
+                <span class="titulo">OHANA</span>
+            </h1>
+        </header>
+        <!-- EL MENU SIN BOOTSTRAP
+                    <nav class="nav">
+                        <ul>
+                            <li class="itemmenu"><a href="./index.html">INICIO</a></li>
+                            <li class="itemmenu"><a href="./html/quienessomos.html">QUIÉNES SOMOS</a></li>
+                            <li class="itemmenu"><a href="./html/escuela.html">ESCUELA</a>
+                                <ol>
+                                    <li>Talleres</li>
+                                    <li>Dias y Horarios</li>
+                                    <li>Muestra Anual</li>
+                                </ol>
+                            </li>
+                            <li class="itemmenu">
+                                <a href="./html/galeria.html">GALERÍA</a>
+                            </li>
+                            <li class="itemmenu">
+                                <a href="./html/contacto.html">CONTACTO</a>
+                            </li>
+            
+                        </ul>
+            
+                    </nav> -->
+
+        <!-- MENU CON BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><span class="titulo">OHANA</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./quienessomos.html">QUIÉNES SOMOS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./escuela.html" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ESCUELA
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./escuela.html">Talleres</a></li>
+                                <li><a class="dropdown-item" href="./escuela.html">Días y Horarios</a></li>
+                                <li><a class="dropdown-item" href="./escuela.html">Muestra Anual</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">GALERÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- CONTENIDO PRINCIPAL/QUIENES SOMOS -->
+        <main class="mainquienessomos">
+            <!-- TEXTO -->
+            <section class="contenedormain">
+                <h2 class="titulomain">¿Cómo nació la escuela?</h2>
+                <br><br>
+                <p class="textomain">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam natus beatae ea
+                    asperiores repudiandae molestiae, obcaecati tempore aliquam debitis id unde impedit sunt maxime.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum cumque,<br><br>
+                    mollitia debitis eaque adipisci a assumenda placeat doloribus sit rerum quae, cupiditate eligendi
+                    pariatur laboriosam. Aut doloremque nesciunt et nulla magnam tenetur sit, est qui modi libero ut
+                    iure. Accusantium voluptate dolorum iste quia mollitia laudantium perspiciatis quos tempore.</p>
+            </section>
+            <!-- IMAGEN/LOGO -->
+            <aside class="contenedorlogo">
+                <img src="../img/escuela.jpg" alt="escuela">
+            </aside>
+
+        </main>
+        <footer class="footer">
+            <!-- AUDIO Y REDES DE CONTACTO -->
+            <audio class="audio" controls autoplay
+                src="./mp3/y2mate.com - Ennio Morricone Cinema Paradiso Theme piano.mp3">
+                El navegador no soporta el audio
+            </audio>
+            <ul class="redes">
+                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-instagram redes"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fab fa-whatsapp redes"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter redes"></i></a></li>
+
+
+
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

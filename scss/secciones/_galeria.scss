@@ -1,0 +1,34 @@
+.maingaleria {
+    grid-area: main;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.contenedorgaleria{
+    max-width: 100%;
+    height:100%;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-image: url(../img/fondolineas.JPG);
+    background-attachment: fixed;
+}
+
+/*CAMBIOS CAROUSEL GALERIA*/
+.carousel-inner{
+    background-color:#cad1de78 ;
+}
+.carousel-item{
+    transition: transform .8s ease-in-out;
+    img{
+        max-height: 60vh;
+    }
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: grey;
+    border-radius: 50%;
+}
+.carousel-control-next, .carousel-control-prev {
+width: 20%;
+}

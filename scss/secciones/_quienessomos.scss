@@ -1,0 +1,42 @@
+.mainquienessomos {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image:$fondoQuienesSomos;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedormain {
+    padding-left: 1%;
+    margin-left: 1%;
+    background-color:$colorPrincipalal40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;    
+    max-height: 200px;
+}
+
+.titulomain {
+    margin-top: 1rem;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #cad1de;
+}
+
+.textomain {
+    font-family: 'Montserrat', sans-serif;
+    overflow: auto;
+}
+
+.contenedorlogo {
+    padding-left: 6rem;
+    img{
+        max-width: 225px;
+    }
+}
+

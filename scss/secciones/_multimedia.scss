@@ -1,0 +1,47 @@
+/*ANIMACIONES Y AUDIO*/
+/*POSICION DEL AUDIO*/
+.audio {
+    width: 15vw;
+    justify-content: left;
+}
+/*ANIMACION DEL LOGO*/
+.logo {
+    border-radius: 50%;
+    max-height: 85px;
+    animation:logogiro 5s infinite;
+}
+@keyframes logogiro{
+    0%{
+        transform:rotate(0deg);
+        transition:.5s;
+    }
+    100%{
+        transform:rotate(50deg);
+        transition:.5s;
+    }
+}
+/*ANIMACION DEL TEXTO INDEX*/
+.texto {
+    animation-name: textoindex;
+    animation-duration: 5s; 
+    animation-iteration-count: 5s;
+}
+@keyframes textoindex{
+    0%{
+        transition: .5s;
+        transform: scale(1.1);
+    }
+    25%{
+        transition: .5s;
+        transform:scale(1.2);
+    }
+    50%{
+        transition: .5s;
+        transform: scale(1.3);
+    }
+    100%{
+        transition: .5s;
+        transform: scale(1);
+        
+    }
+} 
