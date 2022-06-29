@@ -13,9 +13,7 @@
 .header {
     grid-area: header;
     background-color:$colorPrincipal;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include displayFlex(row,center,center,flex-start);
 }
 /*MENU CAMBIOS BOOTSTRAP*/
 .navbar {
@@ -58,17 +56,14 @@
 
 .footer {
     grid-area: footer;
-    display: flex;
     background-color:$colorPrincipal;
-    flex-direction: row;
-    align-items: center;
+    @include displayFlex(row,center,center,flex-start);
 }
 
 /* REDES DEL FOOTER */
 .redes {
     list-style: none;
-    display: flex;
-    flex-direction: row;
+    @include displayFlex(row,center,center,center);
     margin-left: 10vw;
   
     li a {

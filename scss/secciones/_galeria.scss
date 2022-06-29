@@ -1,10 +1,7 @@
 .maingaleria {
     grid-area: main;
     background-image: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+    @include displayFlex(column,stretch,normal,flex-start);
 }
 .contenedorgaleria{
     max-width: 100%;

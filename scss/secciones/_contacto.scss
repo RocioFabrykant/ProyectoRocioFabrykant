@@ -10,22 +10,15 @@
     margin-left: 1.5%;
     background-color: rgba(225, 188, 141, 0.4);
     margin-top: 1%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: stretch;
+    @include displayFlex(column,stretch,center,center);
     input {
         &[type=text], &[type=number], &[type=submit] {
-          border-radius: 5px;
-          background-color: beige;
           width: 15vw;
-          text-align: center;
+          @extend %estiloInputsContacto;
         }
         &[type=email]{
             width: 20vw;
-            border-radius: 5px;
-            background-color: beige;
-            text-align: center;
+            @extend %estiloInputsContacto;
         }
         &[type=submit]:hover{
             background-color: rgb(233, 233, 207);

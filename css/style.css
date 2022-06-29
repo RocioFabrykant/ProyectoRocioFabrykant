@@ -4,6 +4,11 @@
   padding: 0;
   font-family: 'Roboto Flex', sans-serif; }
 
+.formulariocontacto input[type=text], .formulariocontacto input[type=number], .formulariocontacto input[type=submit], .formulariocontacto input[type=email] {
+  border-radius: 5px;
+  background-color: beige;
+  text-align: center; }
+
 /*GRILLA DIVISORIA*/
 .grilla {
   display: grid;
@@ -16,7 +21,9 @@
   background-color: #cad1de;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start; }
 
 /*MENU CAMBIOS BOOTSTRAP*/
 .navbar {
@@ -55,16 +62,21 @@
 
 .footer {
   grid-area: footer;
-  display: flex;
   background-color: #cad1de;
+  display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start; }
 
 /* REDES DEL FOOTER */
 .redes {
   list-style: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   margin-left: 10vw; }
   .redes li a {
     text-decoration: none; }
@@ -90,8 +102,9 @@ h1 {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; }
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start; }
 
 .contenedormainescuela {
   overflow: auto;
@@ -106,6 +119,8 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-content: normal;
+  justify-content: normal;
   background-image: url("../img/fondoilustracion.JPG");
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,8 +132,9 @@ h1 {
   background-color: rgba(202, 209, 222, 0.4);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  align-content: center;
+  justify-content: center;
   width: 70%;
   max-height: 200px; }
 
@@ -178,18 +194,13 @@ h1 {
   margin-top: 1%;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   align-content: center;
-  align-items: stretch; }
+  justify-content: center; }
   .formulariocontacto input[type=text], .formulariocontacto input[type=number], .formulariocontacto input[type=submit] {
-    border-radius: 5px;
-    background-color: beige;
-    width: 15vw;
-    text-align: center; }
+    width: 15vw; }
   .formulariocontacto input[type=email] {
-    width: 20vw;
-    border-radius: 5px;
-    background-color: beige;
-    text-align: center; }
+    width: 20vw; }
   .formulariocontacto input[type=submit]:hover {
     background-color: #e9e9cf;
     transition: .5s;
@@ -204,8 +215,9 @@ h1 {
   background-image: none;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch; }
+  align-items: stretch;
+  align-content: normal;
+  justify-content: flex-start; }
 
 .contenedorgaleria {
   max-width: 100%;
