@@ -1,0 +1,110 @@
+/* MEDIAS QUERIES DISPOSITIVO MOBILE */
+@media(max-width:375px) {
+
+    /* GRILLA GENERAL VERSION MOBILE */
+    .grilla {
+        grid-template-rows: 15vh 4vh 71vh 10vh;
+    }
+
+    /* LOGO HEADER VERSION MOBILE */
+    .logo {
+        height: 70px;
+    }
+
+    /* INDEX VERSION MOBILE */
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenedortexto {
+        max-width: 80%;
+    }
+
+    .texto {
+        font-size: 12px;
+    }
+
+    .contenedorimagen {
+        width: 40%;
+        height: 50%;
+        margin-left: 0;
+    }
+
+    .imagenindex {
+        margin-top: 15%;
+    }
+
+    /* FOOTER/ AUDIO DEL FOOTER DESAPARECE EN VERSION MOBILE */
+    .audio {
+        display: none;
+    }
+
+    .redes {
+        margin-left: 14vw;
+    }
+
+    /* MENU */
+    .itemmenu {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    /* QUIENES SOMOS VERSION MOBILE */
+    .mainquienessomos {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contenedormain {
+        padding-left: 0%;
+        margin-left: 0%;
+        margin-right: 10%;
+        width: 100%;
+        background-color: rgba(225, 188, 141, 0.7);
+    }
+
+    .titulomain {
+        margin-top: .5rem;
+        font-size: 12px;
+    }
+
+    .textomain {
+        font-size: 9px;
+    }
+
+    .contenedorlogo {
+        width: 100%;
+        padding-left: 0;
+        img{
+            max-width: 140px;
+        }
+    }
+
+    /* ESCUELA VERSION MOBILE */
+    .contenedorvideoescuela {
+        height: 40%;
+    }
+
+    .contenedormainescuela {
+        height: 60%;
+    }
+
+    /* GALERIA VERSION MOBILE */
+    .grillagaleria {
+        padding-top: 10%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(4, auto);
+
+    }
+
+    .maingaleria {
+        background-position: 0% 3%;
+    }
+
+}

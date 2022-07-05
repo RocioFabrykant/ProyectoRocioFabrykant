@@ -1,0 +1,95 @@
+/*GRILLA DIVISORIA*/
+.grilla {
+    display: grid;
+    grid-template-rows: 15vh 6vh 70vh 9vh;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+/* HEADER FOOTER MAIN */
+.header {
+    grid-area: header;
+    background-color:$colorPrincipal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*MENU CAMBIOS BOOTSTRAP*/
+.navbar {
+    --bs-navbar-brand-font-size: 1rem;
+    grid-area: nav;
+    --bs-navbar-nav-link-padding-x: 4rem;
+    --bs-navbar-brand-margin-end: 4rem;
+    --bs-navbar-color:$colorPrincipal;
+    /* CAMBIO COLOR DEL ICONO DEL MENU AL HACER HOVER */
+    --bs-navbar-hover-color: rgb(0 0 0 / 70%);
+    /* CAMBIO COLOR HOVER INICIO */
+    --bs-navbar-brand-hover-color: rgb(0 0 0 / 70%);
+    /* BORDE REDONDO ICONO MENU */
+    --bs-navbar-toggler-border-radius: 0.9rem;
+    --bs-navbar-toggler-focus-width: 0.1rem;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 6rem;
+    background-color: white;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+    z-index: 1;
+}
+.nav-link{
+    color:black;
+    &:hover,&:visited,&:active{
+        transition: 0.6s;
+        background-color:$colorPrincipalal30;
+    }
+}
+.navbar-brand {
+    &:active, &:visited {
+      transition: 1s;
+      transform: scale(1.6);
+    }
+  }
+.dropdown-toggle::after{
+    border-top: .3em solid  $colorPrincipal;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    background-color:$colorPrincipal;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* REDES DEL FOOTER */
+.redes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+  
+    li a {
+      text-decoration: none;
+  
+      i:hover {
+        transition: 0.6;
+        transform: scale(2);
+      }
+    }
+  }
+  /*TITULOS*/
+  h1 {
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px white;
+    margin-left: 10px;
+
+}
+
+.titulo {
+    color: brown;
+    margin-left: 15px;
+}

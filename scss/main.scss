@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+}
+@import './variables/colores';
+@import './variables/imagenes';
+@import './secciones/_estructura.scss';
+@import './secciones/_escuela.scss';
+@import './secciones/_quienessomos.scss';
+@import './secciones/_index.scss';
+@import './secciones/_contacto.scss';
+@import './secciones/galeria';
+@import './secciones/multimedia';
+@import './secciones/mediasqueries';

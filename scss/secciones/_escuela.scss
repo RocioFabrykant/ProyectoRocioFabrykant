@@ -1,0 +1,20 @@
+.mainescuela {
+    background-color: #e1bc8d99;
+    background-image:$fondoEscuela;
+    background-attachment: fixed;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenedormainescuela {
+    overflow: auto;
+    height: 50%;
+    background-color: #d1a38d42;
+}
+
+.contenedorvideoescuela {
+    height: 50%;
+}
