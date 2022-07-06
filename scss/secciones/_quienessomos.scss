@@ -2,22 +2,24 @@
     grid-area: main;
     @include displayFlex(row,center,normal,normal);
     background-image:$fondoQuienesSomos;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: inherit;
+    background-repeat: inherit;
+    background-attachment: inherit;
 }
 
 .contenedormain {
+    margin-top: 10%;
     padding-left: 1%;
     margin-left: 1%;
     background-color:$colorPrincipalal40;
     @include displayFlex(column,center,center,center);
-    width: 70%;    
-    max-height: 200px;
+    max-width: 800px;    
+    //max-height: 200px;
 }
 
 .titulomain {
-    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
     font-size: 25px;
     font-weight: bold;
     box-shadow: 2px 2px 2px #cad1de;
@@ -26,10 +28,13 @@
 .textomain {
     font-family: 'Montserrat', sans-serif;
     overflow: auto;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .contenedorlogo {
     padding-left: 6rem;
+    margin-bottom:15%;
     img{
         max-width: 225px;
     }

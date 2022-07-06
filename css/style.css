@@ -97,7 +97,7 @@ h1 {
 
 .mainescuela {
   background-color: #e1bc8d99;
-  background-image: url("../img/fondoescuela.jpg");
+  background-image: url("../img/fondoescuelaOpacidad.jpg");
   background-attachment: fixed;
   grid-area: main;
   display: flex;
@@ -108,8 +108,8 @@ h1 {
 
 .contenedormainescuela {
   overflow: auto;
-  height: 50%;
-  background-color: #d1a38d42; }
+  background-color: #d1a38d42;
+  margin-left: 0.5rem; }
 
 .contenedorvideoescuela {
   height: 50%; }
@@ -121,35 +121,39 @@ h1 {
   align-items: center;
   align-content: normal;
   justify-content: normal;
-  background-image: url("../img/fondoilustracion.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-image: url("../img/fondolineas.JPG");
+  background-size: inherit;
+  background-repeat: inherit;
+  background-attachment: inherit; }
 
 .contenedormain {
+  margin-top: 10%;
   padding-left: 1%;
   margin-left: 1%;
-  background-color: rgba(202, 209, 222, 0.4);
+  background-color: rgba(202, 209, 222, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
-  width: 70%;
-  max-height: 200px; }
+  max-width: 800px; }
 
 .titulomain {
-  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
   font-size: 25px;
   font-weight: bold;
   box-shadow: 2px 2px 2px #cad1de; }
 
 .textomain {
   font-family: 'Montserrat', sans-serif;
-  overflow: auto; }
+  overflow: auto;
+  font-weight: bolder;
+  font-style: italic; }
 
 .contenedorlogo {
-  padding-left: 6rem; }
+  padding-left: 6rem;
+  margin-bottom: 15%; }
   .contenedorlogo img {
     max-width: 225px; }
 
@@ -186,7 +190,7 @@ h1 {
 .maincontacto {
   grid-area: main;
   overflow: auto;
-  background-image: url("../img/fondo.JPG"); }
+  background-image: url("../img/fondoOpacidad.JPG"); }
 
 .formulariocontacto {
   margin-left: 1.5%;
@@ -224,7 +228,7 @@ h1 {
   height: 100%;
   padding-left: 30%;
   padding-right: 30%;
-  background-image: url(../img/fondolineas.JPG);
+  background-color: rgba(102, 27, 8, 0.19);
   background-attachment: fixed; }
 
 /*CAMBIOS CAROUSEL GALERIA*/
