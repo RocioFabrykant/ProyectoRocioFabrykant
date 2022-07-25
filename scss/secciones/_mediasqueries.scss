@@ -1,5 +1,5 @@
 /* MEDIAS QUERIES DISPOSITIVO MOBILE */
-@media(max-width:375px) {
+@media(max-width:414px) {
 
     /* GRILLA GENERAL VERSION MOBILE */
     .grilla {
@@ -21,6 +21,7 @@
 
     .contenedortexto {
         max-width: 80%;
+        padding: 2rem 0 0 0rem;
     }
 
     .texto {
@@ -41,9 +42,9 @@
     .audio {
         display: none;
     }
-
     .redes {
-        margin-left: 14vw;
+        margin-left:15vw;
+        padding:0;
     }
 
     /* MENU */
@@ -54,35 +55,51 @@
     h1 {
         font-size: 15px;
     }
+    //TITULO MAIN ESCUELA Y GALERIA
+    
+    .titulomain{
+        margin-top:2rem;
+        font-size:15px;
+    }
 
     /* QUIENES SOMOS VERSION MOBILE */
     .mainquienessomos {
-        display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        background-attachment: fixed
     }
 
     .contenedormain {
-        padding-left: 0%;
+        /* padding-left: 0%; */
         margin-left: 0%;
-        margin-right: 10%;
-        width: 100%;
-        background-color: rgba(225, 188, 141, 0.7);
+        /* margin-right: 10%; */
+        //margin-top: 2rem;
+        /* width: 100%; */
+        background-color: white;
+        border-radius: inherit;
     }
 
-    .titulomain {
-        margin-top: .5rem;
-        font-size: 12px;
+    .titulomainquienessomos {    
+        margin-top: 0.5rem;
+        font-size: 15px;
+        text-align: center;
+        margin-left: 0;
     }
 
     .textomain {
-        font-size: 9px;
+        font-size: 10px;
+        text-align: center;
     }
 
     .contenedorlogo {
-        width: 100%;
-        padding-left: 0;
+        //width: 100%;
+        //padding-left: 0;
         img{
             max-width: 140px;
+            //margin-left:25%;
+            
+        }
+        &:hover{
+            transform:scale(1.2);
         }
     }
 
@@ -91,20 +108,57 @@
         height: 40%;
     }
 
-    .contenedormainescuela {
-        height: 60%;
-    }
-
     /* GALERIA VERSION MOBILE */
-    .grillagaleria {
-        padding-top: 10%;
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: repeat(4, auto);
-
+    #carouselExampleControlsNoTouching{
+        margin-top:20vh;
+    }
+    .carousel-item{
+        //transition: transform .8s ease-in-out;
+        img{
+            height:30vh;
+            width:100%;
+        }
     }
 
-    .maingaleria {
-        background-position: 0% 3%;
+    //CONTACTO VERSION MOBILE
+    .formulariocontacto{
+        //min-width: 100vw;
+        margin-top: 15vh;
+    
+    input {
+        &[type=email]{
+          min-width: 55vw;
+          height:2%;
+          font-size:smaller;
+        }
+        &[type=text]{
+          min-width: 20vw;
+          height:2%;
+          font-size:smaller;
+        }
+        &[type=number]{
+          min-width:15vw;
+          height:2%;
+          font-size:smaller;
+        }
+        &[type=submit]{
+            height:2%;
+            font-size:smaller;
+        }
     }
+        textarea{
+            max-height: 150px;
+            font-size:smaller;
+          }
+          select{
+            margin-left:20px;
+            min-width: 10vw;
+            height:2%;
+            font-size:smaller;
+         }
+         span{
+            font-size: smaller;
+         }
 
+        }    
 }

@@ -7,18 +7,27 @@
 }
 
 .formulariocontacto {
-    margin-left: 1.5%;
+    //margin-left: 1.5%;
     background-color: rgba(225, 188, 141, 0.4);
     margin-top: 1%;
-    @include displayFlex(column,stretch,center,center);
+    @include displayFlex(column,center,center,center);
     input {
-        &[type=text], &[type=number], &[type=submit] {
-          width: 15vw;
+        &[type=email]{
+          width: 25vw;
           @extend %estiloInputsContacto;
         }
-        &[type=email]{
-            width: 20vw;
-            @extend %estiloInputsContacto;
+        &[type=text]{
+          width: 10vw;
+          @extend %estiloInputsContacto;
+        }
+        &[type=submit]{
+          min-width: 5vw;
+          margin-left: 5px;
+          @extend %estiloInputsContacto
+        }
+        &[type=number]{
+          width:5vw;
+          @extend %estiloInputsContacto;
         }
         &[type=submit]:hover{
             background-color: rgb(233, 233, 207);
@@ -26,11 +35,14 @@
             transform: scale(1.2);
         }
       }
-      select{
-        max-width: 600px;
-      }
       textarea{
-        max-width: 600px;
+        max-width: 400px;
+        //max-width:200px;
+        @extend %estiloInputsContacto;
+      }
+      select{
+        margin-left:3vw;
+        @extend %estiloInputsContacto;
       }
 }
 
